@@ -25,25 +25,22 @@ public class ProjectTest extends BaseTest {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("hbase_pu", props);
         EntityManager em = emf.createEntityManager();
 
-        query = em.createQuery("select p from Physician p");
+        query = em.createQuery("select p from Physician p.specializations = \"therapist\"");
         result = query.getResultList();
         if (result.isEmpty()) {
-            System.out.println("FAIL : Physican table is empty!");
-            exit();
+            System.out.println("FAIL : Physican with specialization therapist doesn't exist!");
         }
 
-        query = em.createQuery("select p from Patient p where p.firstName = \"Wendy\"");
+        query = em.createQuery("select p from Patient p");
         result = query.getResultList();
         if (result.isEmpty()) {
-            System.out.println("FAIL : Patient doesn't exist!");
-            exit();
+            System.out.println("FAIL : Patients table doesn't exist!");
         }
 
-        query = em.createQuery("select mr from MedicalRecord mr where mr.type = \"type\"");
+        query = em.createQuery("select mr from MedicalRecord mr where mr.type = \"visit\"");
         result = query.getResultList();
         if (!result.isEmpty()) {
             System.out.println("FAIL : MedicalRecord is selected with unexisting type!");
-            exit();
         }
 
         em.close();
