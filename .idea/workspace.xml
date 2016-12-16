@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43b5d55b-8cb4-4271-8bef-49abcaee3e20" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Acceptance logs/creation_log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ucu/advanced_databases/rudnitskih/DataProducer.class" afterPath="$PROJECT_DIR$/target/classes/ucu/advanced_databases/rudnitskih/DataProducer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ucu/advanced_databases/rudnitskih/ProjectTest.class" afterPath="$PROJECT_DIR$/target/classes/ucu/advanced_databases/rudnitskih/ProjectTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/practice2-1.0-SNAPSHOT-jar-with-dependencies.jar" afterPath="$PROJECT_DIR$/target/practice2-1.0-SNAPSHOT-jar-with-dependencies.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/practice2-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/practice2-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ucu/advanced_databases/rudnitskih/DataProducer.java" afterPath="$PROJECT_DIR$/src/main/java/ucu/advanced_databases/rudnitskih/DataProducer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ucu/advanced_databases/rudnitskih/ProjectTest.java" afterPath="$PROJECT_DIR$/src/main/java/ucu/advanced_databases/rudnitskih/ProjectTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-    </list>
+    <list default="true" id="43b5d55b-8cb4-4271-8bef-49abcaee3e20" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataProducer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DataProducer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ucu/advanced_databases/rudnitskih/DataProducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="30" column="73" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="73" />
+            <state relative-caret-position="378">
+              <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProjectTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ucu/advanced_databases/rudnitskih/ProjectTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="423">
+              <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -151,6 +140,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>1.8</find>
+      <find>runS</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src</dir>
@@ -975,20 +965,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ucu/advanced_databases/rudnitskih/DataProducer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ucu/advanced_databases/rudnitskih/ProjectTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="30" column="73" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="73" />
+        <state relative-caret-position="423">
+          <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ucu/advanced_databases/rudnitskih/ProjectTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ucu/advanced_databases/rudnitskih/DataProducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="378">
+          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
