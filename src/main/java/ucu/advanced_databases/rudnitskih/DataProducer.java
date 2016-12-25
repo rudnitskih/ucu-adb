@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -27,7 +28,7 @@ public class DataProducer {
         mrTypes.add("prescription");
         mrTypes.add("other");
 
-        Map<String, String> props = new HashMap<>();
+        Map<String, String> props = new HashMap();
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("hbase_pu", props);
         EntityManager em = emf.createEntityManager();
 
@@ -46,17 +47,14 @@ public class DataProducer {
                 Patient patient = new Patient();
                 String pFirstName = df.getFirstName();
                 String pLastName = df.getLastName();
-                String pFullName = pFirstName.concat(" ").concat(pLastName);
-                patient.setId(pFullName.getBytes());
-                patient.setId(ArrayUtils.addAll(physician.getId(), patient.getId()));
+                patient.setId(UuidAdapter.getBytesFromUUID(UUID.randomUUID()));
                 patient.setFirstName(pFirstName);
                 patient.setLastName(pLastName);
                 patient.setDateOfBirth(df.getBirthDate());
                 for (int mr = 0; mr < 10; mr++) {
                     String description = df.getRandomText(100);
                     MedicalRecord medicalRecord = new MedicalRecord();
-                    byte[] mcId = ArrayUtils.addAll(patient.getId(), description.getBytes());
-                    medicalRecord.setId(mcId);
+                    medicalRecord.setId(patient.getId(), UuidAdapter.getBytesFromUUID(UUID.randomUUID()));
                     medicalRecord.setDatePerformed(df.getBirthDate());
                     medicalRecord.setDescription(df.getRandomText(100));
                     medicalRecord.setType(df.getItem(mrTypes));

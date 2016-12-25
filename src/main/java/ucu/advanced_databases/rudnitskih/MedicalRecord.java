@@ -6,7 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
+import org.apache.commons.lang.ArrayUtils;
 
 @Entity
 @Table(name = "medical_records", schema = "default@hbase_pu")
@@ -31,8 +31,8 @@ class MedicalRecord {
         return id;
     }
 
-    public void setId(byte[] id) {
-        this.id = id;
+    public void setId(byte[] patientId, byte[] recordId) {
+        this.id = ArrayUtils.addAll(patientId,recordId);
     }
 
     public String getType() {

@@ -1,7 +1,11 @@
+ucu/advanced_databases/rudnitskih/UuidAdapter.class
+ucu/advanced_databases/rudnitskih/job/MCReducer.class
+ucu/advanced_databases/rudnitskih/job/MCMapper.class
+ucu/advanced_databases/rudnitskih/EntryPoint.class
+ucu/advanced_databases/rudnitskih/Physician.class
 ucu/advanced_databases/rudnitskih/MedicalRecord.class
 ucu/advanced_databases/rudnitskih/DataProducer.class
 ucu/advanced_databases/rudnitskih/Main.class
-ucu/advanced_databases/rudnitskih/Person.class
+ucu/advanced_databases/rudnitskih/CustomTest.class
 ucu/advanced_databases/rudnitskih/Patient.class
-ucu/advanced_databases/rudnitskih/Physician.class
-ucu/advanced_databases/rudnitskih/ProjectTest.class
+ucu/advanced_databases/rudnitskih/job/MapReduceJob.class
