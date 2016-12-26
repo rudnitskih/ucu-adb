@@ -25,7 +25,7 @@ public class CustomTest extends BaseTest {
         List<Patient> allJohns = findQuery2.getResultList();
         Assert.assertNotEquals(0, allJohns.size());
 
-        Query findQuery3 = em.createQuery("select mr from MedicalRecord mr where mr.type = visit");
+        Query findQuery3 = em.createQuery("select mr from MedicalRecord mr where mr.type = non_existent_type");
         List<MedicalRecord> allRecords = findQuery3.getResultList();
         Assert.assertEquals(0, allRecords.size());
     }
